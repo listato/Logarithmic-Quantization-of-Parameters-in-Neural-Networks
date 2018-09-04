@@ -34,7 +34,13 @@ In Chainer's docs, I found this one:
 ```python
 x = x[None, ...]
 ```
-placehoder
+
+Confusing, isn't it?
+I searched the web, it turns out that None is the alias of `numpy.newaxis`, question solved.
+
+>numpy.newaxis
+
+>The newaxis object can be used in all slicing operations to create an axis of length one. :const: newaxis is an alias for ‘None’, and ‘None’ can be used in place of this with the same result.
 
 Therefore, to perform forward computation in Chainer:
 ```python
