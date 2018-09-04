@@ -45,7 +45,7 @@ I searched the web, it turns out that None is the alias of `numpy.newaxis`, ques
 Therefore, to perform forward computation in Chainer:
 ```python
 x, t = test[0]
-x = x[None, ...]
+x = x[None, ...] #or even: x = x[None]
 #print(x)
 #print(t)
 print(model.forward(x))
