@@ -48,7 +48,7 @@ x, t = test[0]
 x = x[None, ...] #or even: x = x[None]
 #print(x)
 #print(t)
-print(model.forward(x))
+print(model(x))
 ```
 which gives:
 ```python
