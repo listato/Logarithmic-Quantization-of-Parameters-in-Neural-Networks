@@ -1,4 +1,4 @@
-## forward computation
+## FORWARD COMPUTATION
 
 ### Network Definition
 Chainer's official MNIST example:
