@@ -39,13 +39,12 @@ placehoder
 Therefore, to perform forward computation in Chainer:
 ```python
 x, t = test[0]
-    x = x[None, ...]
-    print(x)
-    print(t)
-
-    print(Look.forward(x))
+x = x[None, ...]
+#print(x)
+#print(t)
+print(model.forward(x))
 ```
-gives:
+which gives:
 ```python
 variable([[-16.477377  -6.184371 -20.764294 -18.087664 -11.697815
            -17.637484 -33.58191   27.882673 -19.956192  -7.090014]])
