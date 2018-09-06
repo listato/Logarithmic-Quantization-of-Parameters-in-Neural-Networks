@@ -25,7 +25,7 @@ model = MyNetwork()
 For our research, we change the network parameters and then check the influence. 
 
 To perform forward computation and then check the result, one might write his own codes or use the methods offered by the framework. 
-Here we use the `__call__` method the perform accuracy check.
+Here we use the `__call__` method to perform accuracy check.
 
 What we care most is then the **x** paramter.
 
