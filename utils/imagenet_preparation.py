@@ -50,11 +50,7 @@ def create_datasets(groups=500, imgpath='', savepath=''):
     tmp_lists = [[] for _ in range(groups)]
     for index, filename in enumerate(glob.glob(imgpath + '*.JPEG')):
                 img_lists[index//(int(50000/groups))].append(filename)
-
     # print(numpy.array(img_lists).shape) -> (500,100)
-
-
-
     for index, namelists in enumerate(img_lists[0:10]):
         for jpgnames in namelists:
             im = Image.open(jpgnames)
@@ -62,7 +58,6 @@ def create_datasets(groups=500, imgpath='', savepath=''):
             im.close()
         numpy.save(savepath + str(index), numpy.array(tmp_lists[index], dtype=numpy.float32))
         tmp_lists[index] = []
-
 
 if __name__ == "__main__":
     create_datasets()
