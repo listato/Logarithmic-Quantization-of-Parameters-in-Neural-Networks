@@ -1,3 +1,4 @@
+from __future__ import division
 """
 placeholder
 """
@@ -39,18 +40,22 @@ def prepare(image, size=(256, 256)):
     image = image.transpose((2, 0, 1))
     return image
 
+def main(groups=500,imgpath,savepath):
+    img_lists = [[] for _ in range(groups)]
 
-img_lists = [[] for _ in range(500)]
+    for index, filename in enumerate(glob.glob(imgpath + '*.JPEG')):
+                img_lists[index//(50000/groups)].append(filename)
 
-for index, filename in enumerate(glob.glob('D:\BaiduNetdiskDownload\ILSVRC2012_img_val\*.JPEG')):
-            img_lists[index//100].append(filename)
+    # print(numpy.array(img_lists).shape) -> (500,100)
 
-# print(numpy.array(img_lists).shape) -> (500,100)
+    prepared_np = [[] for _ in range(groups)]
 
-prepared_np = [[] for _ in range(500)]
+    for index, namelists in enumerate(img_lists):
+        for jpgnames in namelists:
+            im = Image.open(jpgnames)
+            prepared_np[index].append(prepare(im).tolist())
+        numpy.save(savepath + str(index), numpy.array(prepared_np[index], dtype=numpy.float32))
 
-for index, namelists in enumerate(img_lists):
-    for jpgnames in namelists:
-        im = Image.open(jpgnames)
-        prepared_np[index].append(prepare(im).tolist())
-    numpy.save('E:\imagenet\imgroup'+str(index), numpy.array(prepared_np[index], dtype=numpy.float32))
+    
+if __name__ = "__main__":
+    main()
