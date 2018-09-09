@@ -2,8 +2,6 @@ from chainer.links.model.vision import vgg
 import numpy as np
 from pathos.multiprocessing import ThreadingPool as Pool
 
-
-
 def main():
     v16 = vgg.VGG16Layers()
 
