@@ -2,6 +2,7 @@ from chainer.links.model.vision import vgg
 import numpy as np
 import multiprocessing as mp
 
+
 def main():
     v16 = vgg.VGG16Layers()
 
@@ -19,7 +20,7 @@ def main():
 
     print(np.array(result).shape)
 
-    np.savetxt('D:\BaiduNetdiskDownload\\result\\vgg16.txt', np.array(result), fmt="%u")
+    np.save('D:\BaiduNetdiskDownload\\result\\vgg16.txt', np.array(result, dtype=np.int32))
 
 if __name__ == "__main__":
     main()
