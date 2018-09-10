@@ -2,7 +2,7 @@ from chainer.dataset import concat_examples
 import chainer.functions as F
 
 
-class computeAccuracy:
+class accuracy:
     def __init__(self, iter, model):
         self.iteration = iter.next()
         self.model = model
