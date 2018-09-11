@@ -1,13 +1,11 @@
 from chainer.dataset import concat_examples
 import chainer.functions as F
 
-
-class accuracy:
+class Accuracy:
     def __init__(self, iter, model):
         self.iteration = iter.next()
         self.model = model
-
-
+        
     @property
     def accuracy(self):
         image_test, target_test = concat_examples(self.iteration, -1)
