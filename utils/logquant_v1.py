@@ -37,13 +37,13 @@ class LogQuant:
             return numpy.floor(x)
 
     @property
-    def log_quantized(self):
+    def log_quantize(self):
         round = numpy.vectorize(self.__round)
         clip = numpy.vectorize(self.__clip)
         # numpy.log2(0) -> -infinity == float("-inf") which will be used in clip method
         return numpy.array(clip(round(numpy.log2(abs(self.layer_data)))),dtype=numpy.int8)
 
     @property
-    def anti_quantized(self):
+    def de_quantize(self):
         x = numpy.power(2.0, self.log_quantized)
         return x * self.sign
