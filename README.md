@@ -17,7 +17,7 @@ We use [Chainer](https://chainer.org/) as our testing platform.
 
 ## Code
 
-Quantization kernel is [LogQuant](https://github.com/CJYLab/Logarithmic-Quantization-of-Parameters-in-Neural-Networks/blob/master/utils/logquant_v3.py).
+The quantization kernel is [LogQuant](https://github.com/CJYLab/Logarithmic-Quantization-of-Parameters-in-Neural-Networks/blob/master/utils/logquant_v3.py).
 
 ## Intro
 
