@@ -11,7 +11,7 @@ If it is useful to you, please consider citing the following paper.
 
 ## Note
 
-The quantization algorithm itself is written in Python and it should be compatible to your tools with little to no modifications.
+The quantization algorithm itself is written in Python and it should be compatible with your tools with little to no modifications.
 
 We use [Chainer](https://chainer.org/) as our testing platform. 
 
