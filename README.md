@@ -21,15 +21,18 @@ Quantization kernel is [LogQuant](https://github.com/CJYLab/Logarithmic-Quantiza
 
 ## Intro
 
-1) What is logarithmic quantization?
+### What is logarithmic quantization?
 
 ![Logarithmic Quantization](/img/pro11.jpg)
 
 
-2) How our algorithm outperforms its counterparts?
+### How our algorithm outperforms its counterparts?
 
 We use decimal exponents instead of pure integers which gives lower quantization noise.
 
+The decimail exponents might exceed the given bitwidth, therefore we use a look-up table to keep the exponents.
+
+An overview is given in the following figure:
 ![DLQ](/img/alg2.jpg)
 
 For details please refer to the paper mentioned above.
