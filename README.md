@@ -1,10 +1,10 @@
 # Logarithmic-Quantization-of-Parameters-in-Neural-Networks
 
-Our logarithmic quantization algorithm is one of the best off-the-shelf quantization algorithm.
+One of the best off-the-shelf quantization algorithm.
 
-It is simple (within 20 lines of code) yet powerful (state-of-the-art accuracy after direct quantization of GoogLeNet).
+**It is simple (within 20 lines of code) yet powerful (state-of-the-art accuracy after direct quantization of GoogLeNet).**
 
-If it is useful to you, please considering cite the following paper.
+If it is useful to you, please consider citing the following paper.
 
 > A Deep Look into Logarithmic Quantization of Model Parameters in Neural Networks, Jingyong Cai, Masashi Takemoto and Hironori Nakajo, Proceedings of The 10th International Conference on Advances in Information Technology (IAIT2018)
 
