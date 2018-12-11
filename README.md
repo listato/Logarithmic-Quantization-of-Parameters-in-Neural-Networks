@@ -6,7 +6,7 @@ One of the best off-the-shelf quantization algorithm.
 
 If it is useful to you, please consider citing the following paper.
 
-> A Deep Look into Logarithmic Quantization of Model Parameters in Neural Networks, Jingyong Cai, Masashi Takemoto and Hironori Nakajo, Proceedings of The 10th International Conference on Advances in Information Technology (IAIT2018)
+> Jingyong Cai, Masashi Takemoto, and Hironori Nakajo. 2018. A Deep Look into Logarithmic Quantization of Model Parameters in Neural Networks. In The 10th International Conference on Advances in Information Technology (IAIT2018), December 10–13, 2018, Bangkok, Thailand. ACM, New York, NY, USA, 8 pages. https://doi.org/10.1145/3291280.3291800 
 
 
 ## Note
