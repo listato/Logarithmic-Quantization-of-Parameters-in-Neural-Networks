@@ -15,9 +15,13 @@ The quantization algorithm itself is written in Python and it should be compatib
 
 We use [Chainer](https://chainer.org/) as our testing platform. 
 
-## Code
+## Code and slides
 
 The quantization kernel is [LogQuant](https://github.com/CJYLab/Logarithmic-Quantization-of-Parameters-in-Neural-Networks/blob/master/utils/logquant_v3.py).
+
+You can find the [slides](https://github.com/CJYLab/CJYLab.github.io/blob/master/files/IAIT2018.pdf) I used on IAIT2018 conference.
+
+You may also download the paper for more details: [DLQ_Paper](https://dl.acm.org/citation.cfm?doid=3291280.3291800).
 
 ## Intro
 
