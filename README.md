@@ -1,6 +1,6 @@
 # Logarithmic-Quantization-of-Parameters-in-Neural-Networks
 
-One of the best off-the-shelf quantization algorithm.
+One of the best off-the-shelf quantization algorithms.
 
 **It is simple (within 20 lines of code) yet powerful (state-of-the-art accuracy after direct quantization of GoogLeNet).**
 
